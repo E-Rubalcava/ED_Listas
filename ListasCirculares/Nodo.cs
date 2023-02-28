@@ -8,5 +8,13 @@ namespace ListasCirculares
 {
     internal class Nodo
     {
+        public Nodo Referencia { get; set; }
+        public string Texto { get; set; }
+
+        public Nodo(string texto, Nodo referencia = null)
+        {
+            Texto = texto;
+            Referencia = referencia;
+        }
     }
 }
